@@ -27,6 +27,7 @@ ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
 LOCAL_CFLAGS += -mfloat-abi=soft
 endif
 LOCAL_CFLAGS += -std=c99
+LOCAL_CPPFLAGS := -std=c++11
 LOCAL_LDLIBS += -llog -landroid
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)
